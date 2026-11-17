@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Novato | Succesorrs</title>
+<meta name="description" content="Acceso al archivo Novato.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Barlow:wght@400;600&family=Press+Start+2P&display=block" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<main class="novato-page"><span class="tag">ACCESO RESTRINGIDO</span><h1 class="title glitch" data-t="NOVATO">NOVATO</h1>
+<section class="panel dark access-card" id="access-card">
+<h2>Inicio de sesión</h2><p>Identifícate antes de entrar al archivo.</p>
+<form id="access-form" class="access-form">
+<label for="access-user">Usuario</label><input id="access-user" name="user" autocomplete="username" required>
+<label for="access-password">Contraseña</label><input id="access-password" name="password" type="password" autocomplete="current-password" required>
+<button class="btn" type="submit">Continuar ▶</button>
+</form>
+<div class="access-levels" id="access-levels" hidden>
+<h3>Elige tu nivel de autorización</h3><div class="level-grid">
+<button class="btn" type="button" data-level="Amiguito">Amiguito</button>
+<button class="btn" type="button" data-level="Cómplice">Cómplice</button>
+<button class="btn" type="button" data-level="Familia">Familia</button>
+<button class="btn" type="button" data-level="Un HUmano">Un HUmano</button>
+<button class="btn" type="button" data-level="Persona sospechosa">Persona sospechosa</button>
+<button class="btn" type="button" data-level="Enemigo">Enemigo</button>
+</div><button class="text-button" id="edit-access" type="button">Cambiar usuario o contraseña</button></div>
+</section>
+
+</main>
+<section class="novato-modal" id="access-message" role="dialog" aria-modal="true" aria-labelledby="access-message-title" hidden>
+<div class="novato-modal-card"><img id="access-message-image" alt=""><span class="tag" id="access-message-tag"></span><h2 id="access-message-title"></h2><p id="access-message-copy"></p><button class="btn" id="access-message-close" type="button">Cerrar</button></div>
+</section>
+<script src="js/novato.js"></script><script src="js/main.js"></script></body></html>
